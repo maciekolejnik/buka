@@ -16,13 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        let splitViewController = self.window!.rootViewController as! UISplitViewController
+//        let leftNavController = splitViewController.viewControllers.first as! UINavigationController
+//        let masterViewController = leftNavController.topViewController as! AudiobooksTableViewController
+//        let rightNavController = splitViewController.viewControllers.last as! UINavigationController
+//        let detailViewController = rightNavController.topViewController as! AudiobookDetailViewController
+        
+//        let firstAudiobook = masterViewController.audiobooks.getAudiobook(inCategory: 0, atIndex: 0)
+//        detailViewController.audiobook = firstAudiobook
+//        masterViewController.delegate = detailViewController
+//        detailViewController.navigationItem.leftItemsSupplementBackButton = true
+//        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+        
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let rightNavController = splitViewController.viewControllers.last as! UINavigationController
+        let detailViewController = rightNavController.topViewController as! AudiobookDetailViewController
+        detailViewController.pauseButtonTapped()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -36,6 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let rightNavController = splitViewController.viewControllers.last as! UINavigationController
+        let detailViewController = rightNavController.topViewController as! AudiobookDetailViewController
+        detailViewController.playButtonTapped()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

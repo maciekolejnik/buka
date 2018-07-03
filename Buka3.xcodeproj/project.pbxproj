@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0734835A1EDB8592002369CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483591EDB8592002369CB /* AppDelegate.swift */; };
-		0734835C1EDB8592002369CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734835B1EDB8592002369CB /* ViewController.swift */; };
 		0734835F1EDB8592002369CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0734835D1EDB8592002369CB /* Main.storyboard */; };
 		073483621EDB8592002369CB /* Buka3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 073483601EDB8592002369CB /* Buka3.xcdatamodeld */; };
 		073483641EDB8592002369CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073483631EDB8592002369CB /* Assets.xcassets */; };
 		073483671EDB8592002369CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073483651EDB8592002369CB /* LaunchScreen.storyboard */; };
 		073483721EDB8592002369CB /* Buka3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483711EDB8592002369CB /* Buka3Tests.swift */; };
+		0734837E1EDB8707002369CB /* AudiobooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734837D1EDB8707002369CB /* AudiobooksTableViewController.swift */; };
+		073483801EDB878E002369CB /* AudiobooksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734837F1EDB878E002369CB /* AudiobooksDataSource.swift */; };
+		073483821EDB87A7002369CB /* Audiobook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483811EDB87A6002369CB /* Audiobook.swift */; };
+		073483841EDB87D1002369CB /* AudiobookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483831EDB87D1002369CB /* AudiobookTableViewCell.swift */; };
+		073483861EDB8821002369CB /* AudiobookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483851EDB8820002369CB /* AudiobookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +33,6 @@
 /* Begin PBXFileReference section */
 		073483561EDB8592002369CB /* Buka3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buka3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073483591EDB8592002369CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0734835B1EDB8592002369CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0734835E1EDB8592002369CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		073483611EDB8592002369CB /* Buka3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Buka3.xcdatamodel; sourceTree = "<group>"; };
 		073483631EDB8592002369CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		0734836D1EDB8592002369CB /* Buka3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Buka3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073483711EDB8592002369CB /* Buka3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buka3Tests.swift; sourceTree = "<group>"; };
 		073483731EDB8592002369CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0734837D1EDB8707002369CB /* AudiobooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobooksTableViewController.swift; sourceTree = "<group>"; };
+		0734837F1EDB878E002369CB /* AudiobooksDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobooksDataSource.swift; sourceTree = "<group>"; };
+		073483811EDB87A6002369CB /* Audiobook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audiobook.swift; sourceTree = "<group>"; };
+		073483831EDB87D1002369CB /* AudiobookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobookTableViewCell.swift; sourceTree = "<group>"; };
+		073483851EDB8820002369CB /* AudiobookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +87,13 @@
 		073483581EDB8592002369CB /* Buka3 */ = {
 			isa = PBXGroup;
 			children = (
-				073483591EDB8592002369CB /* AppDelegate.swift */,
-				0734835B1EDB8592002369CB /* ViewController.swift */,
 				0734835D1EDB8592002369CB /* Main.storyboard */,
-				073483631EDB8592002369CB /* Assets.xcassets */,
-				073483651EDB8592002369CB /* LaunchScreen.storyboard */,
-				073483681EDB8592002369CB /* Info.plist */,
+				073483811EDB87A6002369CB /* Audiobook.swift */,
+				0734837F1EDB878E002369CB /* AudiobooksDataSource.swift */,
+				0734837D1EDB8707002369CB /* AudiobooksTableViewController.swift */,
+				073483851EDB8820002369CB /* AudiobookDetailViewController.swift */,
+				073483831EDB87D1002369CB /* AudiobookTableViewCell.swift */,
+				0734837C1EDB85D7002369CB /* Supporting Files */,
 				073483601EDB8592002369CB /* Buka3.xcdatamodeld */,
 			);
 			path = Buka3;
@@ -97,6 +106,17 @@
 				073483731EDB8592002369CB /* Info.plist */,
 			);
 			path = Buka3Tests;
+			sourceTree = "<group>";
+		};
+		0734837C1EDB85D7002369CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				073483591EDB8592002369CB /* AppDelegate.swift */,
+				073483631EDB8592002369CB /* Assets.xcassets */,
+				073483651EDB8592002369CB /* LaunchScreen.storyboard */,
+				073483681EDB8592002369CB /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,16 +164,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					073483551EDB8592002369CB = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9774H5UU34;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					0734836C1EDB8592002369CB = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9774H5UU34;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 073483551EDB8592002369CB;
 					};
@@ -203,9 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0734835C1EDB8592002369CB /* ViewController.swift in Sources */,
+				073483861EDB8821002369CB /* AudiobookDetailViewController.swift in Sources */,
+				073483821EDB87A7002369CB /* Audiobook.swift in Sources */,
+				073483801EDB878E002369CB /* AudiobooksDataSource.swift in Sources */,
 				0734835A1EDB8592002369CB /* AppDelegate.swift in Sources */,
 				073483621EDB8592002369CB /* Buka3.xcdatamodeld in Sources */,
+				0734837E1EDB8707002369CB /* AudiobooksTableViewController.swift in Sources */,
+				073483841EDB87D1002369CB /* AudiobookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +283,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -265,7 +293,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -308,7 +340,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -316,7 +350,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -351,7 +389,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olejnik.maciek.Buka3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -364,7 +403,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olejnik.maciek.Buka3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -378,7 +418,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olejnik.maciek.Buka3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buka3.app/Buka3";
 			};
 			name = Debug;
@@ -393,7 +434,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olejnik.maciek.Buka3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buka3.app/Buka3";
 			};
 			name = Release;
@@ -417,6 +459,7 @@
 				073483781EDB8592002369CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		073483791EDB8592002369CB /* Build configuration list for PBXNativeTarget "Buka3Tests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +468,7 @@
 				0734837B1EDB8592002369CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
