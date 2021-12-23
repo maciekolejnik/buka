@@ -81,7 +81,13 @@ class AudiobooksDataSource {
             description: "Ludwik Jerzy Kern\n\nczytają: Krzysztof Kowalewski i Agnieszka Suchora\nmuzyka: Maciej Mulawa\nCD audio\nwiek: 3+",
             category: madreBajki,
             track: "NosorozceWDorozce")
-        
+        let bzdurki = Audiobook(
+            title: "Kołderkowe bzdurki dla syna i córki",
+            cover: UIImage(named: "MB7_Bzdurki"),
+            description: "Agnieszka Frączek\n\nczytają: Małgorzata Kożuchowska – recytacja, śpiew (piosenka Bzdurki dla córki), Beata Przybytek – śpiew\nmuzyka: Maciej Mulawa\nilustracje: Agata Dudek / Acapulco Studio\nCD audio\nwiek: 2+",
+            category: madreBajki,
+            track: "Bzdurki")
+    
         
         let mity = "Mity greckie"
         let glowaMeduzy = Audiobook(
@@ -120,6 +126,24 @@ class AudiobooksDataSource {
             description: "Nathaniel Hawthorne\n\nczyta: Krzysztof Tyniec\nmuzyka: Maciej Rychły, Mateusz Rychły\nczas trwania: 77:20\nksiążka + CD audio\nwiek: 5+\nilustracje: Józef Wilkoń",
             category: mity,
             track: "Minotaur")
+        let zebySmoka = Audiobook(
+            title: "Opowieści z zaczarowanego lasu. Zęby smoka",
+            cover: UIImage(named: "MITY8_ZebySmoka"),
+            description: "Nathaniel Hawthorne\n\nczyta: Krzysztof Tyniec\nmuzyka: Maciej Rychły, Mateusz Rychły\nczas trwania: 77 min\nksiążka + CD audio\nwiek: 5+\nilustracje: Józef Wilkoń",
+            category: mity,
+            track: "ZebySmoka")
+        let kirke = Audiobook(
+            title: "Opowieści z zaczarowanego lasu. Pałac Kirke",
+            cover: UIImage(named: "MITY9_PalacKirke"),
+            description: "Nathaniel Hawthorne\n\nczyta: Krzysztof Tyniec\nmuzyka: Maciej Rychły, Mateusz Rychły\nczas trwania: 97 min\nksiążka + 2 CD audio\nwiek: 5+\nilustracje: Józef Wilkoń",
+            category: mity,
+            track: "PalacKirke")
+        let nasionaGranatu = Audiobook(
+            title: "Opowieści z zaczarowanego lasu. Nasiona granatu",
+            cover: UIImage(named: "MITY10_NasionaGranatu"),
+            description: "Nathaniel Hawthorne\n\nczyta: Krzysztof Tyniec\nmuzyka: Maciej Rychły, Mateusz Rychły\nczas trwania: 97 min\nksiążka + 2 CD audio\nwiek: 8+\nilustracje: Józef Wilkoń",
+            category: mity,
+            track: "NasionaGranatu")
         
         
         let mistrzowieWyobrazni = "Mistrzowie wyobraźni"
@@ -158,9 +182,26 @@ class AudiobooksDataSource {
             description: "Anna Czerwińska-Rydel\n\nczyta: Anna Dymna\nmuzyka: Karol Szymanowski w wyk. Pawła Rydla (fortepian)\nczas trwania: 2 godz. 30 min\n2 CD audio + książeczka\nwiek 8+",
             category: mistrzowieWyobrazni,
             track: "Czochralski")
-
-        
-        categories = [madreBajki + " 3+", mity + " 5+", mistrzowieWyobrazni + " 8+"]
-        audiobooks = [[rozsmieszanki, krainaSpiochow, swierszczykoweNutki, bylSobieKrol, posluchajcieBajeczki, nosorozceWDorozce], [glowaMeduzy, zlotodajnaMoc, trzyZloteJablka, cudownyDzban, chimera, minotaur], [heweliusz, sklodowska, korczak, fahrenheit, chopin, czochralski]]
+        let ranyJulek = Audiobook(
+            title: "Rany Julek! O tym, jak Julian Tuwim został poetą",
+            cover: UIImage(named: "MW7_RanyJulek"),
+            description: "Agnieszka Frączek\n\nczyta: Maciej Stuhr\nmuzyka: Wojciech Błażejczyk\nczas trwania: 78 minut\nCD audio + książeczka z fragmentami utworów Juliana Tuwima\nwiek 7+",
+            category: mistrzowieWyobrazni,
+            track: "RanyJulek")
+        let kukuczka = Audiobook(
+            title: "Zdobyć koronę. Opowieść o Jerzym Kukuczce",
+            cover: UIImage(named: "MW8_Kukuczka"),
+            description: "Anna Czerwińska-Rydel\n\nczyta: Andrzej Chyra\nmuzyka: Paweł Mykietyn\nprojekt graficzny: Grażka Lange\nczas trwania: 3 godz. 50 min\n3 CD audio + książeczka\nwiek 7+",
+            category: mistrzowieWyobrazni,
+            track: "Kukuczka")
+        let banach = Audiobook(
+            title: "Gen i już! Opowieść o Stefanie Banachu",
+            cover: UIImage(named: "MW9_Banach"),
+            description: "Anna Czerwińska-Rydel\n\nczyta: Małgorzata Kożuchowska\nmuzyka: Stanisław Niewiadomski w wyk. Pawła Rydla - fortepian\nprojekt graficzny: Grażka Lange\nczas trwania: 2 godz. 27 min\n2 CD audio + książeczka-kalendarium\nwiek 7+",
+            category: mistrzowieWyobrazni,
+            track: "Banach")
+  
+        categories = [madreBajki + " 3+", mity + " 5+", mistrzowieWyobrazni + " 7+"]
+        audiobooks = [[bzdurki, rozsmieszanki, krainaSpiochow, swierszczykoweNutki, bylSobieKrol, posluchajcieBajeczki, nosorozceWDorozce], [glowaMeduzy, zlotodajnaMoc, trzyZloteJablka, cudownyDzban, chimera, minotaur, zebySmoka, kirke, nasionaGranatu].reversed(), [heweliusz, sklodowska, korczak, fahrenheit, chopin, czochralski, ranyJulek, kukuczka, banach].reversed()]
     }
 }

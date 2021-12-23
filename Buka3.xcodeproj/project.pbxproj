@@ -18,6 +18,7 @@
 		073483821EDB87A7002369CB /* Audiobook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483811EDB87A6002369CB /* Audiobook.swift */; };
 		073483841EDB87D1002369CB /* AudiobookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483831EDB87D1002369CB /* AudiobookTableViewCell.swift */; };
 		073483861EDB8821002369CB /* AudiobookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073483851EDB8820002369CB /* AudiobookDetailViewController.swift */; };
+		E03CADA4276146EB00185829 /* Rozsmieszanki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E03CADA3276146EB00185829 /* Rozsmieszanki.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		073483811EDB87A6002369CB /* Audiobook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audiobook.swift; sourceTree = "<group>"; };
 		073483831EDB87D1002369CB /* AudiobookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobookTableViewCell.swift; sourceTree = "<group>"; };
 		073483851EDB8820002369CB /* AudiobookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobookDetailViewController.swift; sourceTree = "<group>"; };
+		E03CADA3276146EB00185829 /* Rozsmieszanki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rozsmieszanki.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				0734837D1EDB8707002369CB /* AudiobooksTableViewController.swift */,
 				073483851EDB8820002369CB /* AudiobookDetailViewController.swift */,
 				073483831EDB87D1002369CB /* AudiobookTableViewCell.swift */,
+				E03CADA3276146EB00185829 /* Rozsmieszanki.mp3 */,
 				0734837C1EDB85D7002369CB /* Supporting Files */,
 				073483601EDB8592002369CB /* Buka3.xcdatamodeld */,
 			);
@@ -168,7 +171,7 @@
 				TargetAttributes = {
 					073483551EDB8592002369CB = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 9774H5UU34;
+						DevelopmentTeam = 22YW6S4T4A;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -186,6 +189,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -205,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03CADA4276146EB00185829 /* Rozsmieszanki.mp3 in Resources */,
 				073483671EDB8592002369CB /* LaunchScreen.storyboard in Resources */,
 				073483641EDB8592002369CB /* Assets.xcassets in Resources */,
 				0734835F1EDB8592002369CB /* Main.storyboard in Resources */,
@@ -384,10 +389,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9774H5UU34;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22YW6S4T4A;
 				INFOPLIST_FILE = Buka3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.olejnik.maciek.Buka3;
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wydawnictwo.buka.Buka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -398,10 +405,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9774H5UU34;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22YW6S4T4A;
 				INFOPLIST_FILE = Buka3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.olejnik.maciek.Buka3;
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wydawnictwo.buka.Buka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

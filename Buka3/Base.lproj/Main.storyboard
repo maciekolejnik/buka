@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l5R-YY-7js">
-    <device id="ipad9_7" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l5R-YY-7js">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,35 +16,35 @@
                         <viewControllerLayoutGuide type="bottom" id="cmg-zA-boZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jOo-Wb-b92">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="o65-59-ifg">
-                                <rect key="frame" x="30" y="114" width="642.5" height="604"/>
+                                <rect key="frame" x="30" y="120" width="663.5" height="598"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z3u-w0-VIT">
-                                        <rect key="frame" x="0.0" y="0.0" width="332.5" height="520"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353.5" height="520"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrL-vi-7OP">
-                                                <rect key="frame" x="0.0" y="0.0" width="332.5" height="33.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353.5" height="30"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="249" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ats-Fi-W1q">
-                                                <rect key="frame" x="0.0" y="53.5" width="332.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="50" width="353.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jD-hI-7Xm">
-                                                <rect key="frame" x="0.0" y="94" width="332.5" height="406"/>
+                                                <rect key="frame" x="0.0" y="90.5" width="353.5" height="406"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-Ug-hJv">
-                                                <rect key="frame" x="0.0" y="520" width="332.5" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="516.5" width="353.5" height="3.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -55,7 +52,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gCS-SN-9VZ">
-                                        <rect key="frame" x="382.5" y="0.0" width="260" height="584"/>
+                                        <rect key="frame" x="403.5" y="0.0" width="260" height="590"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wol-6r-wCw">
                                                 <rect key="frame" x="0.0" y="0.0" width="260" height="520"/>
@@ -65,23 +62,23 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aNO-UE-W0u">
-                                                <rect key="frame" x="0.0" y="540" width="260" height="44"/>
+                                                <rect key="frame" x="0.0" y="540" width="260" height="50"/>
                                                 <subviews>
                                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-24-s7R">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" priority="750" constant="40" id="U3h-0B-H3R"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <items/>
                                                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </toolbar>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9ux-MH-F0b">
-                                                        <rect key="frame" x="48" y="0.0" width="214" height="45"/>
+                                                        <rect key="frame" x="58" y="0.0" width="204" height="51"/>
                                                         <connections>
                                                             <action selector="changeTrackTime:" destination="jQ1-mX-680" eventType="valueChanged" id="9uS-VF-fDP"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="eIR-24-s7R" firstAttribute="width" secondItem="9ux-MH-F0b" secondAttribute="height" multiplier="1:1" id="cYh-Jg-29F"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
@@ -123,10 +120,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudiobookCell" rowHeight="100" id="08d-Zu-xWM" customClass="AudiobookTableViewCell" customModule="Buka3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="08d-Zu-xWM" id="Sgq-qt-T6S">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2d-N4-F5u">
@@ -167,7 +164,7 @@
             <objects>
                 <navigationController id="lNC-cr-sxJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Az-Ye-1F8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -198,7 +195,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Mu9-mu-8Fc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Orc-F4-qCK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="703.5" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
