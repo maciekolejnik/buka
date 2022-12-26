@@ -87,6 +87,12 @@ class AudiobooksDataSource {
             description: "Agnieszka Frączek\n\nczytają: Małgorzata Kożuchowska – recytacja, śpiew (piosenka Bzdurki dla córki), Beata Przybytek – śpiew\nmuzyka: Maciej Mulawa\nilustracje: Agata Dudek / Acapulco Studio\nCD audio\nwiek: 2+",
             category: madreBajki,
             track: "Bzdurki")
+        let rozsmieszanki_small = Audiobook(
+            title: "Rozśmieszanki, Usypianki",
+            cover: UIImage(named: "MB8_Rozsmieszanki"),
+            description: "Danuta Wawiłow\n\nczytają: Jerzy Stuhr, Edyta Jungowska, Maciej Stuhr\nmuzyka: Maciej Mulawa\nczas trwania: ??:??\nCD audio\nwiek: 3+",
+            category: madreBajki,
+            track: "Rozsmieszanki_Small")
     
         
         let mity = "Mity greckie"
@@ -142,6 +148,12 @@ class AudiobooksDataSource {
             title: "Opowieści z zaczarowanego lasu. Nasiona granatu",
             cover: UIImage(named: "MITY10_NasionaGranatu"),
             description: "Nathaniel Hawthorne\n\nczyta: Krzysztof Tyniec\nmuzyka: Maciej Rychły, Mateusz Rychły\nczas trwania: 97 min\nksiążka + 2 CD audio\nwiek: 8+\nilustracje: Józef Wilkoń",
+            category: mity,
+            track: "NasionaGranatu")
+        let pigmeje = Audiobook(
+            title: "Opowieści z zaczarowanego lasu. Pigmeje",
+            cover: UIImage(named: "MITY11_Pigmeje"),
+            description: "Nathaniel Hawthorne\n\nczyta: Krzysztof Tyniec\nmuzyka: Maciej Rychły, Mateusz Rychły\nczas trwania: 70 min\nksiążka + 2 CD audio\nwiek: 8+\nilustracje: Józef Wilkoń",
             category: mity,
             track: "NasionaGranatu")
         
@@ -202,6 +214,6 @@ class AudiobooksDataSource {
             track: "Banach")
   
         categories = [madreBajki + " 3+", mity + " 5+", mistrzowieWyobrazni + " 7+"]
-        audiobooks = [[bzdurki, rozsmieszanki, krainaSpiochow, swierszczykoweNutki, bylSobieKrol, posluchajcieBajeczki, nosorozceWDorozce], [glowaMeduzy, zlotodajnaMoc, trzyZloteJablka, cudownyDzban, chimera, minotaur, zebySmoka, kirke, nasionaGranatu].reversed(), [heweliusz, sklodowska, korczak, fahrenheit, chopin, czochralski, ranyJulek, kukuczka, banach].reversed()]
+        audiobooks = [[bzdurki, rozsmieszanki_small, krainaSpiochow, swierszczykoweNutki, bylSobieKrol, posluchajcieBajeczki, nosorozceWDorozce, rozsmieszanki], [glowaMeduzy, zlotodajnaMoc, trzyZloteJablka, cudownyDzban, chimera, minotaur, zebySmoka, kirke, nasionaGranatu, pigmeje].reversed(), [heweliusz, sklodowska, korczak, fahrenheit, chopin, czochralski, ranyJulek, kukuczka, banach].reversed()]
     }
 }
